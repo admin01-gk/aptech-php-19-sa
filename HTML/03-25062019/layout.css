@@ -68,17 +68,27 @@ body{
 #c1-1{
     width: 425px;
     height: 150px;
-    background-color: dodgerblue;
+    background-color: dimgray;
     margin-bottom: 0px;
 }
 #c1-2{
     width: 425px;
     height: 150px;
-    background-color: dodgerblue;
+    background-color: dimgray;
     margin-bottom: 0px;
+    display: block;
 }
 #m1{
-    
+    width: 425px;
+    height: 75px;
+    background-color:dimgray;
+    margin-bottom: 0px;
+}
+#m2{
+    width: 425px;
+    height: 75px;
+    background-color:dimgray;
+    margin-bottom: 0px;
 }
 #footer{
     height: 50px;
