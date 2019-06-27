@@ -15,6 +15,29 @@ body{
     border: 1px solid #CDCDCD;
     margin-bottom: 15px;
     margin-top: 15px;
+    display: flex;
+}
+#h1{
+    width: 650px;
+    height: 40px;
+    background-color: dodgerblue;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+
+}
+#h2{
+    width: 300px;
+    height: 40px;
+    background-color: dodgerblue;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-top: 30px;
+
 }
 #content{
     height: 200px;
@@ -25,6 +48,37 @@ body{
     background-color: dimgray;
     margin-bottom:15px;
     clear: both;
+}
+#c1{
+    width: 850px;
+    height: 150px;
+    background-color: dimgray;
+    padding-left: 10px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+
+    margin-bottom: 0px;
+    margin-left: 60px;
+    margin-right: 0px;
+    margin-top: 25px;
+    display: flex;
+
+
+}
+#c1-1{
+    width: 425px;
+    height: 150px;
+    background-color: dodgerblue;
+    margin-bottom: 0px;
+}
+#c1-2{
+    width: 425px;
+    height: 150px;
+    background-color: dodgerblue;
+    margin-bottom: 0px;
+}
+#m1{
+    
 }
 #footer{
     height: 50px;
