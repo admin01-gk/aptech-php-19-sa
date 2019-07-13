@@ -1,0 +1,52 @@
+                body {
+                    background-color: whitesmoke;
+                }
+                
+                @media only screen and (max-width:1200px) {
+                    .end {
+                        height: 100px;
+                        width: 33%;
+                        background-color: red;
+                    }
+                }
+                
+                @media only screen and (max-width:1200px) {
+                    .sec {
+                        height: 100px;
+                        width: 33%;
+                        background-color: white;
+                    }
+                }
+                
+                @media only screen and (max-width:1200px) {
+                    .first {
+                        height: 100px;
+                        width: 33%;
+                        background-color: green;
+                    }
+                }
+                
+                @media only screen and (max-width:768px) {
+                    .first {
+                        background-color: red;
+                    }
+                    .end {
+                        background-color: green;
+                    }
+                }
+                
+                @media only screen and (max-width:1200px) {
+                    .One {
+                        height: 100px;
+                        width: 50%;
+                        background-color: yellow;
+                    }
+                }
+                
+                @media only screen and (max-width:1200px) {
+                    .Two {
+                        height: 100px;
+                        width: 50%;
+                        background-color: red;
+                    }
+                }
