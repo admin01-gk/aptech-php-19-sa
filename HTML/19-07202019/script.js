@@ -35,25 +35,28 @@ var data = {
 // document.body.appendChild(elementButton);
 // console.log(document.body.childNodes[2]);
 // document.body.innerBefore(elementButton, document.body.childNodes[2]);
+
 var tbody = document.getElementById('table')
-console.log(data.users.length);
-for (var i = 0; i < data.users.length; i++) {
-    var user = data.users[i];
-    var tablerow = document.createElement('tr');
-    tbody.appendChild(tablerow);
-    //id
+    // console.log(data.users.length);
 
-    var tabledata = document.createElement('td');
-    tabledata.innerHTML = user.id;
-    tablerow.appendChild(tabledata);
-    //mame
-    var tabledata = document.createElement('td');
-    tabledata.innerHTML = user.name;
-    tablerow.appendChild(tabledata);
-    //email
-    var tabledata = document.createElement('td');
-    tabledata.innerHTML = user.email;
-    tablerow.appendChild(tabledata);
-    //password
+function datas() {
+    for (var i = 0; i < data.users.length; i++) {
+        var user = data.users[i];
+        var tablerow = document.createElement('tr');
+        tbody.appendChild(tablerow);
+        //id
+        var tabledata = document.createElement('td');
+        tabledata.innerHTML = user.id;
+        tablerow.appendChild(tabledata);
+        //mame
+        var tabledata = document.createElement('td');
+        tabledata.innerHTML = user.name;
+        tablerow.appendChild(tabledata);
+        //email
+        var tabledata = document.createElement('td');
+        tabledata.innerHTML = user.email;
+        tablerow.appendChild(tabledata);
+        //password
 
+    }
 }

@@ -4,3 +4,19 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
+td {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
