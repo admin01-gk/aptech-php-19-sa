@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Official Vue.js Component for fullPage.js</title>
+    <meta name="author" content="Alvaro Trigo Lopez">
+    <meta name="description" content="Vue-fullpage.js. Official Vue.js component for fullPage.js. An easy to use wrapper for your vue application.">
+    <meta name="keywords" content="fullpage,wrapper,vue.js,vue-fullpage,vue-component,vue,directive,sections,slides,scrolling,snap,snapping,scroll">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:title" content="vue-fullpage.js - Official Vue.js component for fullPage.js">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Official Vue.js component for fullPage.js. An easy to use wrapper for your vue application.">
+    <meta property="og:image" content="https://alvarotrigo.com/vue-fullpage/imgs/vue-fullpage-card.png">
+    <meta property="og:url" content="https://alvarotrigo.com/vue-fullpage/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@imac2">
+    <meta name="twitter:creator" content="@imac2">
+    <meta name="twitter:title" content="fullPage.js">
+    <meta name="twitter:description" content="Official Vue.js component for fullPage.js. An easy to use wrapper for your vue application.">
+    <meta name="twitter:image" content="https://alvarotrigo.com/vue-fullpage/imgs/vue-fullpage-card.png">
+    <meta name="twitter:url" content="https://alvarotrigo.com/fullPage/">
+    <meta name="Resource-type" content="Document">
+
+    <link rel="canonical" href="https://alvarotrigo.com/vue-fullpage/">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://alvarotrigo.com/fullPage/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://alvarotrigo.com/fullPage/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://alvarotrigo.com/fullPage/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://alvarotrigo.com/fullPage/favicons/manifest.json">
+    <link rel="mask-icon" href="https://alvarotrigo.com/fullPage/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://alvarotrigo.com/fullPage/favicons/favicon.ico">
+
+
+
+    <meta name="apple-mobile-web-app-title" content="vue-fullpage.js">
+    <meta name="application-name" content="vue-fullpage.js">
+    <meta name="msapplication-config" content="https://alvarotrigo.com/fullPage/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        blockquote,
+        body,
+        dd,
+        div,
+        dl,
+        dt,
+        fieldset,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        input,
+        li,
+        ol,
+        p,
+        pre,
+        td,
+        textarea,
+        th,
+        ul {
+            padding: 0;
+            margin: 0
+        }
+        
+        a {
+            text-decoration: none
+        }
+        
+        table {
+            border-spacing: 0
+        }
+        
+        fieldset,
+        img {
+            border: 0
+        }
+        
+        address,
+        caption,
+        cite,
+        code,
+        dfn,
+        em,
+        strong,
+        th,
+        var {
+            font-weight: 400;
+            font-style: normal
+        }
+        
+        strong {
+            font-weight: 700
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+        
+        caption,
+        th {
+            text-align: left
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+            font-size: 100%;
+            margin: 0;
+            padding: 0
+        }
+        
+        q:after,
+        q:before {
+            content: ''
+        }
+        
+        abbr,
+        acronym {
+            border: 0
+        }
+        
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: arial, helvetica
+        }
+        
+        #app,
+        #fullpage,
+        .section,
+        body,
+        html {
+            height: 100%
+        }
+        
+        .fp-tableCell {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%
+        }
+        
+        .section.fp-table {
+            display: table;
+            table-layout: fixed;
+            width: 100%
+        }
+        
+        .section {
+            position: relative
+        }
+        
+        #section-1 {
+            text-align: center;
+            background: #41b883
+        }
+        
+        #section-1 h2:before {
+            content: '';
+            display: inline-block;
+            height: 200px;
+            width: 232px;
+            background-image: url(imgs/vue-fullpage3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            vertical-align: bottom
+        }
+        
+        #section-1 h2 {
+            color: #fff;
+            font-size: 10em;
+            font-weight: 900
+        }
+        
+        #section-1 h1 {
+            font-size: 2em;
+            font-weight: 100;
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: antialiased;
+            margin: 1.5em auto 1em auto;
+            color: #35495e;
+            padding-right: 30px;
+            padding-left: 30px
+        }
+        
+        #section-1 li {
+            display: inline-block;
+            margin: 1.25em .3em
+        }
+        
+        .section-1-button {
+            padding: .93em 1.87em;
+            background: #35495e;
+            border-radius: 5px;
+            display: block;
+            color: #fff
+        }
+        
+        h3 {
+            font-size: 5em;
+            text-align: center;
+            color: #fff;
+            font-weight: 700
+        }
+        
+        #logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #fff;
+            font-weight: 700;
+            z-index: 99;
+            font-size: 1.9em;
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: antialiased
+        }
+        
+        #menu-line {
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 159px;
+            height: 2px;
+            background: #fff
+        }
+        
+        #menu {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 70;
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: antialiased;
+            letter-spacing: 1px;
+            font-size: 1.1em
+        }
+        
+        #menu li {
+            display: inline-block;
+            margin: 10px 0;
+            position: relative
+        }
+        
+        #menu a {
+            color: #fff;
+            padding: 0 1.1em 1.1em 1.1em
+        }
+        
+        #menu li.active a:after {
+            content: '';
+            margin: 0 1.1em 0 1.1em;
+            height: 2px;
+            background: #fff;
+            display: block;
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            right: 0;
+            display: block
+        }
+        
+        .actions {
+            position: fixed;
+            bottom: 2%;
+            margin: 0 auto;
+            z-index: 99;
+            left: 0;
+            right: 0;
+            text-align: center
+        }
+        
+        .actions li {
+            display: inline-block;
+            margin: .3em .3em
+        }
+        
+        .actions-button {
+            padding: .73em 1.47em;
+            background: rgba(53, 73, 94, .47);
+            border-radius: 5px;
+            display: block;
+            color: #fff
+        }
+        
+        .twitter-share i {
+            vertical-align: middle;
+            position: relative;
+            top: 2px;
+            display: inline-block;
+            width: 38px;
+            height: 14px;
+            color: #fff;
+            top: -4px;
+            left: -2px;
+            fill: #fff
+        }
+        
+        .twitter-share svg {
+            height: 40px;
+            margin-top: -10px
+        }
+    </style>
+
+    <link id="prefetch" rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <style>
+        @media screen and (max-width:1135px) {
+            .actions,
+            .fp-tableCell {
+                font-size: .9em!important
+            }
+        }
+        
+        @media screen and (max-width:1050px),
+        screen and (max-height:600px) {
+            .actions,
+            .fp-tableCell {
+                font-size: .85em!important
+            }
+            #section-1 h2:before {
+                height: 135px;
+                width: 156px
+            }
+        }
+        
+        @media screen and (max-width:1030px) {
+            .shell {
+                width: calc(60% - 54px)
+            }
+        }
+        
+        @media screen and (max-width:900px),
+        screen and (max-height:500px) {
+            #section-1 h1 {
+                font-size: 1.7em;
+                margin: 1em 0 .6em 0
+            }
+            .shell {
+                width: 80%!important;
+                margin: 0
+            }
+            #menu {
+                text-align: center;
+                left: 0;
+                right: 0
+            }
+        }
+        
+        @media screen and (max-width:700px),
+        screen and (max-height:400px) {
+            .actions,
+            .fp-tableCell {
+                font-size: .8em!important
+            }
+            #section-1 h2 {
+                font-size: 6.5em!important
+            }
+            #section-1 h2:before {
+                height: 99px;
+                width: 115px
+            }
+        }
+        
+        @media screen and (max-width:630px) {
+            #section-1 h2 {
+                font-size: 6.5em!important
+            }
+            #logo {
+                display: none
+            }
+            #menu {
+                letter-spacing: 0;
+                font-size: .95em;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
+            }
+        }
+        
+        @media screen and (max-width:550px) {
+            #section-1 h2 {
+                font-size: 5em!important
+            }
+            .shell-body {
+                margin: 1.6em
+            }
+            #menu li a {
+                padding: 0 .7em .7em .7em
+            }
+            #section-1 h2:before {
+                height: 64px;
+                width: 75px
+            }
+        }
+        
+        @media screen and (max-width:380px) {
+            #section-1 h2:before {
+                height: 52px;
+                width: 60px
+            }
+            #section-1 h2 {
+                font-size: 3.5em!important
+            }
+            .shell-body {
+                margin: 1em
+            }
+        }
+    </style>
+    <style>
+        /*!
+ * fullPage 3.0.2
+ * https://github.com/alvarotrigo/fullPage.js
+ *
+ * @license GPLv3 for open source use only
+ * or Fullpage Commercial License for commercial use
+ * http://alvarotrigo.com/fullPage/pricing/
+ *
+ * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
+ */
+        
+        .fp-enabled body,
+        html.fp-enabled {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+        
+        .fp-section {
+            position: relative;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        .fp-slide {
+            float: left
+        }
+        
+        .fp-slide,
+        .fp-slidesContainer {
+            height: 100%;
+            display: block
+        }
+        
+        .fp-slides {
+            z-index: 1;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out
+        }
+        
+        .fp-section.fp-table,
+        .fp-slide.fp-table {
+            display: table;
+            table-layout: fixed;
+            width: 100%
+        }
+        
+        .fp-tableCell {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%
+        }
+        
+        .fp-slidesContainer {
+            float: left;
+            position: relative
+        }
+        
+        .fp-controlArrow {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -ms-user-select: none;
+            position: absolute;
+            z-index: 4;
+            top: 50%;
+            cursor: pointer;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            margin-top: -38px;
+            -webkit-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0)
+        }
+        
+        .fp-controlArrow.fp-prev {
+            left: 15px;
+            width: 0;
+            border-width: 38.5px 34px 38.5px 0;
+            border-color: transparent #fff transparent transparent
+        }
+        
+        .fp-controlArrow.fp-next {
+            right: 15px;
+            border-width: 38.5px 0 38.5px 34px;
+            border-color: transparent transparent transparent #fff
+        }
+        
+        .fp-scrollable {
+            overflow: hidden;
+            position: relative
+        }
+        
+        .fp-scroller {
+            overflow: hidden
+        }
+        
+        .iScrollIndicator {
+            border: 0!important
+        }
+        
+        .fp-notransition {
+            -webkit-transition: none!important;
+            transition: none!important
+        }
+        
+        #fp-nav {
+            position: fixed;
+            z-index: 100;
+            margin-top: -32px;
+            top: 50%;
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0)
+        }
+        
+        #fp-nav.fp-right {
+            right: 17px
+        }
+        
+        #fp-nav.fp-left {
+            left: 17px
+        }
+        
+        .fp-slidesNav {
+            position: absolute;
+            z-index: 4;
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            left: 0!important;
+            right: 0;
+            margin: 0 auto!important
+        }
+        
+        .fp-slidesNav.fp-bottom {
+            bottom: 17px
+        }
+        
+        .fp-slidesNav.fp-top {
+            top: 17px
+        }
+        
+        #fp-nav ul,
+        .fp-slidesNav ul {
+            margin: 0;
+            padding: 0
+        }
+        
+        #fp-nav ul li,
+        .fp-slidesNav ul li {
+            display: block;
+            width: 14px;
+            height: 13px;
+            margin: 7px;
+            position: relative
+        }
+        
+        .fp-slidesNav ul li {
+            display: inline-block
+        }
+        
+        #fp-nav ul li a,
+        .fp-slidesNav ul li a {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            text-decoration: none
+        }
+        
+        #fp-nav ul li a.active span,
+        #fp-nav ul li:hover a.active span,
+        .fp-slidesNav ul li a.active span,
+        .fp-slidesNav ul li:hover a.active span {
+            height: 12px;
+            width: 12px;
+            margin: -6px 0 0 -6px;
+            border-radius: 100%
+        }
+        
+        #fp-nav ul li a span,
+        .fp-slidesNav ul li a span {
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            height: 4px;
+            width: 4px;
+            border: 0;
+            background: #333;
+            left: 50%;
+            top: 50%;
+            margin: -2px 0 0 -2px;
+            -webkit-transition: all .1s ease-in-out;
+            -moz-transition: all .1s ease-in-out;
+            -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out
+        }
+        
+        #fp-nav ul li:hover a span,
+        .fp-slidesNav ul li:hover a span {
+            width: 10px;
+            height: 10px;
+            margin: -5px 0 0 -5px
+        }
+        
+        #fp-nav ul li .fp-tooltip {
+            position: absolute;
+            top: -2px;
+            color: #fff;
+            font-size: 14px;
+            font-family: arial, helvetica, sans-serif;
+            white-space: nowrap;
+            max-width: 220px;
+            overflow: hidden;
+            display: block;
+            opacity: 0;
+            width: 0;
+            cursor: pointer
+        }
+        
+        #fp-nav ul li:hover .fp-tooltip,
+        #fp-nav.fp-show-active a.active+.fp-tooltip {
+            -webkit-transition: opacity .2s ease-in;
+            transition: opacity .2s ease-in;
+            width: auto;
+            opacity: 1
+        }
+        
+        #fp-nav ul li .fp-tooltip.fp-right {
+            right: 20px
+        }
+        
+        #fp-nav ul li .fp-tooltip.fp-left {
+            left: 20px
+        }
+        
+        .fp-auto-height .fp-slide,
+        .fp-auto-height .fp-tableCell,
+        .fp-auto-height.fp-section {
+            height: auto!important
+        }
+        
+        .fp-responsive .fp-auto-height-responsive .fp-slide,
+        .fp-responsive .fp-auto-height-responsive .fp-tableCell,
+        .fp-responsive .fp-auto-height-responsive.fp-section {
+            height: auto!important
+        }
+    </style>
+</head>
+
+<body>
+
+    <a id="logo" href="https://alvarotrigo.com/fullPage/" alt="fullPage homepage">fullPage</a>
+    <div id="app">
+        <ul id="menu">
+            <li data-menuanchor="page1" class="active"><a href="#page1">Section 1</a></li>
+            <li data-menuanchor="page2"><a href="#page2">Section 2</a></li>
+            <li data-menuanchor="page3"><a href="#page3">Section 3</a></li>
+            <li>
+                <a href="https://twitter.com/imac2" target="_blank" rel="noopener" class="twitter-share">
+                    <i>
+                    <svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
+                </i>
+                </a>
+            </li>
+        </ul>
+
+        <full-page ref="fullpage" :options="options" id="fullpage">
+            <div class="section fp-table active" id="section-1">
+                <div class="fp-tableCell">
+                    <h2>fullpage</h2>
+                    <h1>The official vue-fullpage.js component for Vue.js</h1>
+                    <ul>
+                        <li>
+                            <a class="section-1-button" href="https://github.com/alvarotrigo/vue-fullpage.js" rel="noopener" data-t="">View on Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section" id="section-2">
+                <button class="my-arrow left" @click="$refs.fullpage.api.moveSlideLeft()">
+                <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                        45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                </svg>
+            </button>
+                <button class="my-arrow right" @click="$refs.fullpage.api.moveSlideRight()">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                        0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </button>
+                <div class="slide active" id="slide-2-1">
+                    <div class="shell">
+                        <div class="shell-header">
+                            <span class="shell-header-actions shell-header-close"></span>
+                            <span class="shell-header-actions shell-header-minimize"></span>
+                            <span class="shell-header-actions shell-header-maximize"></span>
+                            <span class="shell-tabs">
+                            <a href="#html" class="active shell-tab">HTML</a>
+                            <a href="#js" class="shell-tab">JS</a>
+                        </span>
+                            <a href="https://codepen.io/alvarotrigo/pen/zpQmwq" class="shell-demo">See in Codepen</a>
+                        </div>
+
+                        <div class="shell-body">
+
+                            <div class="shell-tab-content active" data-tab="html">
+                                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;template&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;full-page&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">@</span><span class="na">click=</span><span class="s">"$refs.fullpage.api.moveSectionDown()"</span><span class="nt">&gt;</span>
+            Next
+        <span class="nt">&lt;/button&gt;</span>
+        Section 1
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">@</span><span class="na">click=</span><span class="s">"$refs.fullpage.api.moveSectionUp()"</span><span class="nt">&gt;</span>
+            Prev
+        <span class="nt">&lt;/button&gt;</span>
+        Section 2
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/full-page&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/template&gt;</span></code></pre></figure>
+                            </div>
+
+                            <div class="shell-tab-content" data-tab="js">
+                                <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="k">import</span> <span class="nx">Vue</span> <span class="k">from</span> <span class="s1">'vue'</span>
+<span class="k">import</span> <span class="nx">VueFullPage</span> <span class="k">from</span> <span class="s1">'vue-fullpage'</span>
+
+<span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">VueFullPage</span><span class="p">);</span>
+
+<span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+  <span class="na">el</span><span class="p">:</span> <span class="s1">'#app'</span><span class="p">,</span>
+  <span class="na">render</span><span class="p">:</span> <span class="nx">h</span> <span class="o">=&gt;</span> <span class="nx">h</span><span class="p">(</span><span class="nx">App</span><span class="p">)</span>
+<span class="p">});</span></code></pre></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <h3>Slide 2.2</h3>
+                </div>
+                <div class="slide">
+                    <h3>Slide 2.2</h3>
+                </div>
+                <div class="slide">
+                    <h3>Slide 2.2</h3>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                <h3>Section 3</h3>
+            </div>
+
+        </full-page>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script type="text/javascript" src="dist/js/vue-fullpage.min.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                options: {
+                    menu: '#menu',
+                    scrollBar: false,
+                    navigation: true,
+                    controlArrows: false,
+                    anchors: ['page1', 'page2', 'page3'],
+                    sectionsColor: ['#41b883', '#ff5f45', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab']
+                },
+            },
+
+            methods: {
+                addSection: function(e) {
+                    e.preventDefault()
+                    var newSectionNumber = document.querySelectorAll('.fp-section').length + 1
+
+                    // creating the section div
+                    var section = document.createElement('div')
+                    section.className = 'section'
+                    section.innerHTML = `<h3>Section ${newSectionNumber}</h3>`
+
+                    // adding section
+                    document.querySelector('#fullpage').appendChild(section)
+
+                    // creating the section menu element
+                    var sectionMenuItem = document.createElement('li')
+                    sectionMenuItem.setAttribute('data-menuanchor', 'page' + newSectionNumber)
+                    sectionMenuItem.innerHTML = `<a href="#page${newSectionNumber}">Section${newSectionNumber}</a>`
+
+                    // adding it to the sections menu
+                    var sectionsMenuItems = document.querySelector('#menu')
+                    sectionsMenuItems.appendChild(sectionMenuItem)
+
+                    // adding anchor for the section
+                    this.options.anchors.push(`page${newSectionNumber}`)
+
+                    // we have to call `update` manually as DOM changes won't fire updates
+                    // requires the use of the attribute ref="fullpage" on the
+                    // component element, in this case, <full-page>
+                    // ideally, use an ID element for that element too
+                    this.$refs.fullpage.build()
+                },
+
+                removeSection: function() {
+                    var sections = document.querySelector('#fullpage').querySelectorAll('.fp-section')
+                    var lastSection = sections[sections.length - 1]
+
+                    // removing the last section
+                    lastSection.parentNode.removeChild(lastSection)
+
+                    // removing the last anchor
+                    this.options.anchors.pop()
+
+                    // removing the last item on the sections menu
+                    var sectionsMenuItems = document.querySelectorAll('#menu li')
+                    var lastItem = sectionsMenuItems[sectionsMenuItems.length - 1]
+                    lastItem.parentNode.removeChild(lastItem)
+                },
+
+                toggleNavigation: function() {
+                    this.options.navigation = !this.options.navigation;
+                },
+
+                toggleScrollbar: function() {
+                    console.log("Changing scrollbar...");
+                    this.options.scrollBar = !this.options.scrollBar;
+                }
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        function onLoad() {
+            var e, t, a, n, o, s, c, r, l, i, u, d;
+            e = window, t = document, a = "script", n = "ga", e.GoogleAnalyticsObject = n, e.ga = e.ga || function() {
+                    (e.ga.q = e.ga.q || []).push(arguments)
+                }, e.ga.l = 1 * new Date, o = t.createElement(a), s = t.getElementsByTagName(a)[0], o.async = 1, o.src = "https://www.google-analytics.com/analytics.js", s.parentNode.insertBefore(o, s), ga("create", "UA-94005074-1", "auto"), ga("send", "pageview"), c = window, r = document, l = "script", c.fbq || (i = c.fbq = function() {
+                    i.callMethod ? i.callMethod.apply(i, arguments) : i.queue.push(arguments)
+                }, c._fbq || (c._fbq = i), i.push = i, i.loaded = !0, i.version = "2.0", i.queue = [], (u = r.createElement(l)).async = !0, u.src = "https://connect.facebook.net/en_US/fbevents.js", (d = r.getElementsByTagName(l)[0]).parentNode.insertBefore(u, d)), fbq("init", "1786065945027357"), fbq("track", "PageView"),
+                function(e, t, a) {
+                    var n = window.document.createElement("link");
+                    window.document.styleSheets;
+                    n.rel = "stylesheet", n.href = e, document.querySelector("head").insertBefore(n, document.querySelector("#prefetch").nextSibling)
+                }("https://alvarotrigo.com/vue-fullpage/dist/non-critical.min.css")
+        }
+        window.addEventListener("load", onLoad);
+        var ACTIVE = "active";
+
+        function areYouCrazy() {
+            alert("Really dude?\n\nYou though I would lose my precious time making these buttons work as if they were real?\nNo freaking way! :)")
+        }
+
+        function onClickTab(e) {
+            e.preventDefault();
+            var t = this.getAttribute("href").substr(1);
+            removeClass(document.querySelector(".shell-tab.active"), ACTIVE), addClass(this, ACTIVE), removeClass(document.querySelector(".active[data-tab]"), ACTIVE), addClass(document.querySelector('[data-tab="' + t + '"]'), ACTIVE)
+        }
+
+        function addClass(e, t) {
+            return e.classList ? e.classList.add(t) : e.className += " " + t, e
+        }
+
+        function removeClass(e, t) {
+            return e.classList ? e.classList.remove(t) : e.className = e.className.replace(new RegExp("(^|\\b)" + t.split(" ").join("|") + "(\\b|$)", "gi"), " "), e
+        }
+        document.querySelectorAll(".shell-tab").forEach(function(e) {
+            e.addEventListener("click", onClickTab)
+        }), document.querySelectorAll(".shell-header-actions").forEach(function(e) {
+            e.addEventListener("click", areYouCrazy)
+        });
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1786065945027357&ev=PageView&noscript=1"></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+</body>
+
+</html>

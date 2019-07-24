@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://demo.mage-themes.com/template/event/event/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link type="text/css" rel="stylesheet" href="./css"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
+</style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
+</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
+
+<title>The Annual Conference 2014</title>
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<link href="./font-awesome.min.css" rel="stylesheet">
+<link href="./jquery-ui.min.css" rel="stylesheet">
+<link href="./animate.min.css" rel="stylesheet">
+<link href="./style.css" rel="stylesheet" type="text/css">
+
+<!-- Google Map -->
+<script src="./js"></script>
+<script>
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(51.518641, -0.168163);
+    var map_options = {
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      center: myLatlng,
+      scrollwheel: false,
+      disableDefaultUI: true
+    }
+
+    var map = new google.maps.Map(document.getElementById('map_canvas'), map_options)
+    var myIcon = new google.maps.MarkerImage('images/map_icon.png', null, null, null, new google.maps.Size(36,54));
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      icon: myIcon
+    });
+
+    /* Remove if you dont want B/W Google Map */
+    /*
+    var styles = [
+      {
+        featureType: "all",
+        stylers: [
+          { saturation: -100 }
+        ]
+      }
+    ];
+
+    map.setOptions({styles: styles});
+    */
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!-- Google Map Ends! -->
+
+<script type="text/javascript" charset="UTF-8" src="./common.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./util.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./map.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./marker.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./onion.js.tải xuống"></script><script type="text/javascript" charset="UTF-8" src="./controls.js.tải xuống"></script></head>
+
+<body style="">
+
+<div class="page">
+
+  <!-- header -->
+  <div class="header" style="background-position: 50% 0px;">
+
+    <div class="container">
+
+      <h1 class="animated fadeInDown" style="opacity: 0;"><a href="http://demo.mage-themes.com/template/event/event/index.html#">The Annual Conference 2015</a></h1>
+      <p class="subtitle animated fadeInDown" style="opacity: 0;">1 track, 3 conference days, 4 workshops, 10 excellent speakers and <strong><a href="http://demo.mage-themes.com/template/event/event/index.html#">just 300 available seats</a></strong>.</p>
+
+      <div class="when animated fadeInLeft" style="opacity: 0;">
+
+        <div class="icon-holder">
+          <i class="fa fa-calendar"></i>
+        </div>
+
+        <div>
+          <p><strong>When</strong></p>
+          <p><span>7th to 9th October 2014</span><br>Starting at 10am</p>
+        </div>
+
+      </div>
+
+      <div class="where animated fadeInLeft" style="opacity: 0;">
+
+        <div class="icon-holder">
+          <i class="fa fa-map-marker"></i>
+        </div>
+
+        <div>
+          <p><strong>Where</strong></p>
+          <p><span>London</span><br><a href="http://demo.mage-themes.com/template/event/event/index.html#">Awesome Venue Name</a></p>
+        </div>
+
+      </div>
+
+      <div class="register-now animated fadeInRight" style="opacity: 0;">
+        <p>Tickets are on sale now, get 10% off till November 1st!</p>
+        <a href="http://demo.mage-themes.com/template/event/event/index.html#registration" class="button">Register Now</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- header ends -->
+
+  <!-- topics -->
+  <div class="topics">
+    <div class="container">
+
+      <h3 style="opacity: 0;" class="animated fadeInDown"><strong>For three days,</strong><br>creative experts making great ideas happen.</h3>
+
+      <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Sed suscipit erat egestas ante sollicitudin, quis tristique leo tristique.</p> 
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-code fa-2x animated fadeInDown" style="opacity: 0;"></i>
+        <h4>Better Coding</h4>
+        <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat.</p>
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-line-chart fa-2x animated fadeInDown" style="opacity: 0;"></i>
+        <h4>Secret to Succeess</h4>
+        <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat.</p>
+      </div>
+      <!-- single topic ends! -->
+
+      <!-- single topic -->
+      <div>
+        <i class="fa fa-lightbulb-o fa-2x animated fadeInDown" style="opacity: 0;"></i>
+        <h4>Make Ideas Happen</h4>
+        <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat.</p>
+      </div>
+      <!-- single topic ends! -->
+
+    </div>
+  </div>
+  <!-- topics ends! -->
+
+  <a id="speakers" class="anchor"></a>
+
+  <!-- speakers -->
+  <div class="speakers">
+    <div class="container">
+
+        <h2 style="opacity: 0;" class="animated fadeInLeft">The Speakers</h2>
+        <p class="subtitle animated fadeInRight" style="opacity: 0;">Master Classes from creative experts</p>
+
+        <!-- featured -->
+        <div class="featured">
+
+          <div class="image">
+            <img src="./featured-speaker.jpg" alt="">
+          </div>
+
+          <div>
+            <h3 style="opacity: 0;" class="animated fadeInLeft">Featured: Phasellus iaculis placerat neque id fringilla.</h3>
+
+            <p class="title">CEO &amp; Co-founder</p>
+
+            <p>Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+
+            <p>Sed suscipit erat egestas ante sollicitudin, quis tristique leo tristique. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi.</p>
+          </div>
+
+        </div>
+        <!-- featured ends! -->
+
+        <div class="single">
+          <img src="./speaker_1.jpg" alt="">
+
+          <div style="display: none;">
+            <h3 style="opacity: 0;" class="animated fadeInDown">Jennifer<br>Smith</h3>
+            <p><strong>Web developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+            <p><a href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-twitter fa-lg"></i></a> <a href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-linkedin fa-lg"></i></a></p>
+          </div>
+        </div>
+
+        <div class="single">
+          <img src="./speaker_2.jpg" alt="">
+
+          <div style="display: none;">
+            <h3 style="opacity: 0;" class="animated fadeInDown">Mike<br>Jonson</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+
+        <div class="single">
+          <img src="./speaker_3.jpg" alt="">
+
+          <div style="display: none;">
+            <h3 style="opacity: 0;" class="animated fadeInDown">Todd<br>Johnson</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+
+        <div class="single">
+          <img src="./speaker_4.jpg" alt="">
+
+          <div style="display: none;">
+            <h3 style="opacity: 0;" class="animated fadeInDown">Jessica<br>Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+
+        <div class="single">
+          <img src="./speaker_4.jpg" alt="">
+
+          <div style="display: none;">
+            <h3 style="opacity: 0;" class="animated fadeInDown">Lusi<br>Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+
+        <div class="single">
+          <img src="./speaker_3.jpg" alt="">
+
+          <div style="display: none;">
+            <h3 style="opacity: 0;" class="animated fadeInDown">Mike<br>Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+
+        <div class="single">
+          <img src="./speaker_1.jpg" alt="">
+
+          <div style="display: none;">
+            <h3 style="opacity: 0;" class="animated fadeInDown">Lisa<br>Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+
+        <div class="single">
+          <img src="./speaker_2.jpg" alt="">
+
+          <div style="display: none;">
+            <h3 style="opacity: 0;" class="animated fadeInDown">Ken<br>Smith</h3>
+            <p><strong>Frontend developer</strong></p>
+            <p>Lorem Ipsum Dolor Sit Amanet Duis non sem nisi Phasellus iaculis placerat neque id fringilla.</p>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  <!-- speakers ends! -->
+
+  <a id="scheadule" class="anchor"></a>
+
+  <!-- schedule -->
+  <div class="schedule">
+    <div class="container">
+
+      <h2 style="opacity: 0;" class="animated fadeInLeft">Conference Schedule</h2>
+      <p class="subtitle animated fadeInRight" style="opacity: 0;">packed with high quality content, just for you.</p>
+
+      <div class="tabs ui-tabs ui-widget ui-widget-content ui-corner-all">
+
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+          <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="false" aria-expanded="false"><a href="http://demo.mage-themes.com/template/event/event/index.html#tabs-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Day 1, 7th</a></li>
+          <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="true" aria-expanded="true"><a href="http://demo.mage-themes.com/template/event/event/index.html#tabs-2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Day 2, 8th</a></li>
+          <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-3" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false"><a href="http://demo.mage-themes.com/template/event/event/index.html#tabs-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Day 3, 9th</a></li>
+        </ul>
+        
+        <!-- day -->
+        <div id="tabs-1" class="day ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true" style="display: none;">
+
+          <!-- single event -->
+          <div class="event">
+            
+            <!-- event time -->
+            <div class="event-time">08:30 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4>Registration</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">08:45 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+                <div>
+                  <h4><a href="http://demo.mage-themes.com/template/event/event/index.html#">The Future of the Web: and how to prepare for it now</a></h4>
+                  <p class="speaker"><strong>Samantha Jonson</strong><br>Founder of Creative Agency</p>
+                  
+                  <p style="display: none;"><img src="./small_member_placeholder.jpg" alt=""> Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+
+                  <p style="display: none;">Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+                </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">08:45 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="http://demo.mage-themes.com/template/event/event/index.html#">The Future of the Web: and how to prepare for it now</a></h4>
+                <p class="speaker"><strong>Samantha Jonson</strong><br>Founder of Creative Agency</p>
+
+                <p style="display: none;">Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+
+                <p style="display: none;">Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus <a href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-anchor"></i> lorem vel interdum volutpat</a>. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+
+                <p style="display: none;">Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event">
+
+            <!-- event time -->
+            <div class="event-time">13:00 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+              
+              <div>
+                <h4>Lunch Break</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">14:30 - 15:45 <span><i class="fa fa-angle-down"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="http://demo.mage-themes.com/template/event/event/index.html#">Workshop: The Future of the Web: and how to prepare for it now</a></h4>
+                <p class="speaker"><strong>Samantha Jonson</strong><br>Founder of Creative Agency</p>
+
+                <p style="display: none;">Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+        </div>
+        <!-- day ends! -->
+
+        <!-- day -->
+        <div id="tabs-2" class="day ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-2" role="tabpanel" aria-hidden="false" style="display: block;">
+          
+          <!-- single event -->
+          <div class="event">
+            
+            <!-- event time -->
+            <div class="event-time">08:30 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4>Registration</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+             <!-- event time -->
+            <div class="event-time">08:45 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="http://demo.mage-themes.com/template/event/event/index.html#">Workshop: The Future of the Web: and how to prepare for it now</a></h4>
+                <p class="speaker"><strong>Samantha Jonson</strong><br>Founder of Creative Agency</p>
+
+                <p style="display: none;">Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event">
+
+            <!-- event time -->
+            <div class="event-time">13:00 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+              
+              <div>
+                <h4>Lunch Break</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">14:30 - 15:45 <span><i class="fa fa-angle-down"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="http://demo.mage-themes.com/template/event/event/index.html#">Workshop: The Future of the Web: and how to prepare for it now</a></h4>
+                <p class="speaker"><strong>Samantha Jonson</strong><br>Founder of Creative Agency</p>
+
+                <p style="display: none;">Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+        </div>
+        <!-- day ends! -->
+
+        <!-- day -->
+        <div id="tabs-3" class="day ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true" style="display: none;">
+
+          <!-- single event -->
+          <div class="event">
+            
+            <!-- event time -->
+            <div class="event-time">08:30 <span></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4>Registration</h4>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+          <!-- single event -->
+          <div class="event extend">
+
+            <!-- event time -->
+            <div class="event-time">08:45 - 09:15 <span><i class="fa fa-angle-down"></i></span></div>
+            <!-- event time ends! -->
+
+            <!-- event details -->
+            <div class="event-info">
+
+              <div>
+                <h4><a href="http://demo.mage-themes.com/template/event/event/index.html#">Workshop: The Future of the Web: and how to prepare for it now</a></h4>
+                <p class="speaker"><strong>Samantha Jonson</strong><br>Founder of Creative Agency</p>
+
+                <p style="display: none;">Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla. Nunc commodo tellus diam, sed molestie quam fermentum varius. Etiam finibus lorem vel interdum volutpat. Suspendisse potenti. Duis non sem nisi. Phasellus iaculis placerat neque id fringilla.</p>
+              </div>
+
+            </div>
+            <!-- event details ends! -->
+
+          </div>
+          <!-- single event ends! -->
+
+        </div>
+        <!-- day ends! -->
+
+      </div>
+
+    </div>
+  </div>
+  <!-- schedule ends! -->
+
+  <!-- why -->
+  <div class="why">
+    <div class="container">
+
+        <div class="testimonials">
+
+          <h4>Testimonials</h4>
+
+          
+
+        <div class="flex-viewport" style="overflow: hidden; position: relative;"><div class="slides" style="width: 1000%; transition-duration: 0s; transform: translate3d(-491px, 0px, 0px);"><blockquote class="clone" style="float: left; display: block; width: 491px;">
+              Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Smith Jonson<br><span>Frontend Developer</span></cite>
+            </blockquote><blockquote class="clone" aria-hidden="true" style="float: left; display: block; width: 491px;">
+              Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Smith Jonson<br><span>Frontend Developer</span></cite>
+            </blockquote>
+
+            <blockquote class="flex-active-slide" style="float: left; display: block; width: 491px;">
+              Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Mike Jonson<br><span>Frontend Developer</span></cite>
+            </blockquote>
+
+            <blockquote style="float: left; display: block; width: 491px;" class="">Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Jennifer Jonson<br><span>Frontend Developer</span></cite>
+            </blockquote>
+
+            <blockquote style="float: left; display: block; width: 491px;" class="">
+              Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Smith Jonson<br><span>Frontend Developer</span></cite>
+            </blockquote>
+
+          <blockquote class="clone" aria-hidden="true" style="float: left; display: block; width: 491px;">
+              Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Mike Jonson<br><span>Frontend Developer</span></cite>
+            </blockquote><blockquote class="clone" style="float: left; display: block; width: 491px;">
+              Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.
+              <cite>Mike Jonson<br><span>Frontend Developer</span></cite>
+            </blockquote></div></div><ul class="flex-direction-nav"><li><a class="flex-prev" href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-chevron-left"></i></a></li><li><a class="flex-next" href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-chevron-right"></i></a></li></ul></div>
+
+        <div class="bullets">
+
+          <h3 style="opacity: 0;" class="animated fadeInLeft">Why is this conference for you?</h3>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Stay Ahead of the curve</h4>
+            <p>Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Find new ways of thinking and problem-solving</h4>
+            <p>Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Networking opportunities</h4>
+            <p>Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.</p>
+          </div>
+
+          <div>
+            <h4><i class="fa fa-check"></i> Strengthen Your Skills</h4>
+            <p>Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.</p>
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+  <!-- why ends! -->
+
+  <a id="registration" class="anchor"></a>
+
+  <!-- registration -->
+  <div class="registration">
+    <div class="container">
+
+      <h2 style="opacity: 0;" class="animated fadeInLeft">Pricing &amp; Registration</h2>
+      <p class="subtitle animated fadeInRight" style="opacity: 0;"><strong>Only 300 available seats</strong> Get your Conference Tickets early.</p>
+
+      <p class="desc">Quisque gravida libero sodales augue luctus elementum. In tristique faucibus diam, sit amet ultrices erat porttitor ut. Phasellus sit amet lorem sit amet orci lobortis mattis. Nulla venenatis, quam vitae pellentesque sollicitudin, erat enim varius nisl, sed porta augue mi et dui.</p>
+
+      <h3>Fill out your information</h3>
+
+      <div class="form animated fadeInLeft" style="opacity: 0;">
+
+        <form action="http://demo.mage-themes.com/template/event/event/index.html" method="post">
+          <input type="text" name="firstname" placeholder="First Name">
+          <input type="text" name="lastname" placeholder="Last Name">
+          <input type="text" name="email" placeholder="Email">
+          <input type="text" name="address" placeholder="Address">
+          <input type="text" name="zip" placeholder="Zip Code">
+          <input type="text" name="city" placeholder="City">
+          <input type="text" name="program" id="program" placeholder="Select your program on the right" disabled="disabled">
+
+          <!--textarea name="message" placeholder="Your Message *"></textarea-->
+          <button name="submit" type="submit">Confirm Your Order</button>
+
+        </form>
+
+      </div>
+      
+      <div class="price animated fadeInRight" style="opacity: 0;">
+
+        <div>
+
+          <p class="amount">$330</p>
+          <h4>Early Bird <span>Save NOW</span></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mollis risus. Nulla ornare ipsum id lacus vehicula sit amet euismod nibh sagittis.</p>
+
+        </div>
+
+        <div>
+
+          <p class="amount">$350</p>
+          <h4>Conference</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mollis risus. Nulla ornare ipsum id lacus vehicula sit amet euismod nibh sagittis.</p>
+
+        </div>
+
+
+        <div>
+
+          <p class="amount">$500</p>
+          <h4>Conference + Workshops</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mollis risus. Nulla ornare ipsum id lacus vehicula sit amet euismod nibh sagittis.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- registration ends! -->
+
+  <a id="sponsors" class="anchor"></a>
+
+  <!-- sponsors -->
+  <div class="sponsors">
+    <div class="container">
+
+      <h2 style="opacity: 0;" class="animated fadeInLeft">Sponsors &amp; Partners</h2>
+      <p class="subtitle animated fadeInRight" style="opacity: 0;">Interested in becoming a sponsor? <a href="http://demo.mage-themes.com/template/event/event/index.html#" class="open-contact-form">Get in touch</a></p>
+
+      <div class="slides">
+        
+      <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul style="width: 800%; transition-duration: 0.6s; transform: translate3d(-97032px, 0px, 0px);">
+          <li style="float: left; display: block; width: 311px;"><a href="http://demo.mage-themes.com/template/event/event/index.html#"><img src="./3docean-light-background.png" draggable="false"></a></li>
+          <li style="float: left; display: block; width: 311px;"><a href="http://demo.mage-themes.com/template/event/event/index.html#"><img src="./activeden-light-background.png" draggable="false"></a></li>
+          <li style="float: left; display: block; width: 311px;"><a href="http://demo.mage-themes.com/template/event/event/index.html#"><img src="./graphicriver-light-background.png" draggable="false"></a></li>
+          <li style="float: left; display: block; width: 311px;"><a href="http://demo.mage-themes.com/template/event/event/index.html#"><img src="./videohive-light-background.png" draggable="false"></a></li>
+        </ul></div><ul class="flex-direction-nav"><li><a class="flex-prev" href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-chevron-left"></i></a></li><li><a class="flex-next" href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-chevron-right"></i></a></li></ul></div>
+
+    </div>
+  </div>
+  <!-- sponsors ends! -->
+
+  <a id="location" class="anchor"></a>
+
+  <!-- location -->
+  <div class="location">
+    <div class="container">
+
+      <h2 style="opacity: 0;" class="animated fadeInLeft">Location and Venue</h2>
+      <p class="subtitle animated fadeInRight" style="opacity: 0;">area full of great hotels and restaurants.</p>
+
+      <!-- info -->
+      <div class="info">
+
+        <div class="maps">
+
+          <div class="images animated fadeInLeft" style="opacity: 0;">
+            <img src="./placeholder.jpg">
+          </div>
+
+          <div id="map_canvas" style="opacity: 0; position: relative; overflow: hidden;" class="animated fadeInLeft"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -99, -27);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -99, -27);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div></div></div><div style="width: 36px; height: 54px; overflow: hidden; position: absolute; left: -18px; top: -54px; z-index: 0;"><img alt="" src="./map_icon.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -99, -27);"><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./vt" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./vt(1)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./vt(2)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./vt(3)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./vt(4)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./vt(5)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div title="" style="width: 36px; height: 54px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -18px; top: -54px; z-index: 0;"><img alt="" src="./map_icon.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;" src="./saved_resource.html"></iframe><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=51.518641,-0.168163&amp;z=16&amp;t=m&amp;hl=vi-VN&amp;gl=US&amp;mapclient=apiv3" title="Mở khu vực này trong Google Maps (mở cửa sổ mới)" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="./google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 201px; top: 71px;"><div style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">Dữ liệu Bản đồ</div><div style="font-size: 13px;">Dữ liệu bản đồ ©2019 Google</div><button draggable="false" title="Đóng" aria-label="Đóng" type="button" class="gm-ui-hover-effect" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 215px; bottom: 0px; width: 143px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; display: none;">Dữ liệu Bản đồ</a><span>Dữ liệu bản đồ ©2019 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Dữ liệu bản đồ ©2019 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 115px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/vi-VN_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Điều khoản sử dụng</a></div></div><button draggable="false" title="Chuyển đổi chế độ xem toàn màn hình" aria-label="Chuyển đổi chế độ xem toàn màn hình" type="button" style="background: none rgb(255, 255, 255); display: none; border: 0px; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px;"></button><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Báo cáo lỗi trong bản đồ đường hoặc hình ảnh đến Google" href="https://www.google.com/maps/@51.518641,-0.168163,16z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Báo cáo một lỗi bản đồ</a></div></div></div></div></div>
+
+        </div>
+
+        <div class="address animated fadeInRight" style="opacity: 0;">
+
+          <h4>Spend three inspiring days in the cultural and cosmopolitan city of London. The area is full of great hotels, restaurants and galleries.</h4>
+
+          <h5><i class="fa fa-chevron-right"></i> Venue</h5>
+
+          <div class="venue">
+            <p><span>Town and Country Resort &amp; Convention Center</span></p>
+            <p>500 Hotel Circle North</p>
+            <p>San Diego, CA 92108</p>
+            <a href="http://demo.mage-themes.com/template/event/event/index.html#">Book Online</a>
+          </div>
+
+          <h5><i class="fa fa-chevron-right"></i> Nearby Accomodation</h5>
+
+          <div class="venue">
+            <p><span>Town and Country Resort &amp; Convention Center</span></p>
+            <p>500 Hotel Circle North</p>
+            <p>San Diego, CA 92108</p>
+            <a href="http://demo.mage-themes.com/template/event/event/index.html#">Book Online</a>
+          </div>
+
+          <div class="venue">
+            <p><span>Town and Country Resort &amp; Convention Center</span></p>
+            <p>500 Hotel Circle North</p>
+            <p>San Diego, CA 92108</p>
+            <a href="http://demo.mage-themes.com/template/event/event/index.html#">Book Online</a>
+          </div>
+
+          <div class="venue">
+            <p><span>Town and Country Resort &amp; Convention Center</span></p>
+            <p>500 Hotel Circle North</p>
+            <p>San Diego, CA 92108</p>
+            <a href="http://demo.mage-themes.com/template/event/event/index.html#">Book Online</a>
+          </div>
+
+          <h5><i class="fa fa-chevron-right"></i> Additional details</h5>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+
+      </div>
+      <!-- info ends! -->
+    
+    </div>
+  </div>
+  <!-- location ends! -->
+
+  <!-- social -->
+  <div class="social">
+    <div class="container">
+
+      <div>
+        <h2 style="opacity: 0;">Keep me informed</h2>
+        <p class="subtitle" style="opacity: 0;">Signup to our newsletter or connect via social networks</p>
+
+        <form action="http://demo.mage-themes.com/template/event/event/index.html" method="post">
+          <input type="text" name="name" placeholder="enter your email address">
+          <button name="submit" type="submit"><i class="fa fa-arrow-circle-right"></i></button>
+        </form>
+
+        <a href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-facebook"></i></a>
+        <a href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-twitter"></i></a>
+        <a href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-google-plus"></i></a>
+        <a href="http://demo.mage-themes.com/template/event/event/index.html#"><i class="fa fa-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+  <!-- social ends! -->
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+
+      <p>Copyright 2014 <a href="http://mage-themes.com/">Mage-Themes.com</a></p>
+
+    </div>
+  </div>
+  <!-- footer ends! -->
+
+</div>
+
+<!-- back to top -->
+<div class="back">
+  <div class="container">
+
+    <a href="http://demo.mage-themes.com/template/event/event/index.html#top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+  </div>
+</div>
+<!-- back to top ends! -->
+
+<!-- contact form overlay popup -->
+<div class="overlay" style="display: none;">
+
+  <div class="contact-form">
+    
+    <h3>Contact Us</h3>
+    <p>We will get back to you as soon as possible</p>
+
+    <!-- contact form -->
+    <div class="form">
+      <form action="http://demo.mage-themes.com/template/event/event/contact.php" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button name="submit" type="submit">Send Message</button>
+
+      </form>
+    </div>
+    <!-- contact form ends! -->
+
+    <!-- Do Not Remove! -->
+    <p class="error"></p>
+    <p class="message"></p>
+    <!-- Do Not Remove! Ends! -->
+
+    <a href="http://demo.mage-themes.com/template/event/event/index.html#" class="close-contact-form"><i class="fa fa-times fa-lg"></i></a>
+  </div>
+
+</div>
+<!-- contact form overlay popup ends! -->
+
+<!-- scripts -->
+<script src="./jquery-1.11.0.min.js.tải xuống"></script>
+<script src="./jquery-ui.min.js.tải xuống"></script>
+<script src="./jquery.flexslider-min.js.tải xuống"></script>
+<script src="./jquery.parallax-1.1.3.js.tải xuống"></script>
+<script src="./jquery.inview.min.js.tải xuống"></script>
+<script src="./form.js.tải xuống"></script>
+<script src="./theme.js.tải xuống"></script>
+<!-- scripts ends! -->
+
+
+</body></html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="text"></h1>
+    <table>
+        <tr>
+            <th>User</th>
+            <th>age</th>
+            <th>Class</th>
+
+        </tr>
+    </table>
+    <button id="bt" onclick="chaydi();">Chạy Đi</button>
+    <script>
+        var data = JSON.parse(xhttp.responseText);
+        console.log(data);
+
+        function chaydi() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("text").innerHTML =
+                        this.responseText;
+                }
+            }
+            console.log(26);
+            xhttp.open("GET", "https://namcoi.com/projects/users-crud-laravel/public/api/users", true);
+            xhttp.send();
+        }
+    </script>
+</body>
+
+</html>
