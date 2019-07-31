@@ -5,7 +5,7 @@ body {
 
 body {
     width: 100%;
-    background: orangered;
+    background-image: image()
     overflow: hidden;
 }
 
