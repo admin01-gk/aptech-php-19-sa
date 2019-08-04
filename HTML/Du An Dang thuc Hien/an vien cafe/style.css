@@ -1,0 +1,25 @@
+#section2 img {
+    left: 130%;
+    position: relative;
+    transition: all 600ms ease;
+}
+
+#section2 p {
+    opacity: 0;
+    transition: all 600ms ease;
+}
+
+#section3 .intro {
+    left: -130%;
+    position: relative;
+    transition: all 600ms ease;
+}
+
+#section3 .intro {
+    left: -130%;
+    position: relative;
+    transition: all 600ms ease;
+}
+body.fp-viewing-3rdPage #section3 .intro {
+    left: 0%;
+}

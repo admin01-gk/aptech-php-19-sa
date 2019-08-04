@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>An Hoa Vien - The Coffee House</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage callback function." />
+    <meta name="keywords" content="fullpage,jquery,demo,callbac,function,event" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/examples.css" />
+    <link rel="stylesheet" href="./style.css">
+
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+
+</head>
+
+<body>
+
+
+    <ul style="text-align: end" id="menu">
+        <li data-menuanchor="firstPage"><a href="#firstPage">Trang Chu</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Gioi Thieu</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Menu</a></li>
+        <li data-menuanchor="4rdPage"><a href="#4rdPage">Lien He</a></li>
+    </ul>
+
+
+    <div id="fullpage">
+        <div class="section " id="section1">
+            <div class="intro">
+                <h1>An Hoa Vien </h1>
+                <p>The Coffee House </p>
+
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <img src="./img/1.png" alt="Cool" />
+                <h1>From the callbacks</h1>
+                <p>Animation fired through fullPage.js callbacks, making use of css3 transitions.</p>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="intro">
+                <h1>Cool uh?</h1>
+                <p>Choose the best easing effect for your site!</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/fullpage.js"></script>
+    <script type="text/javascript" src="./js/examples.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            afterLoad: function(origin, destination, direction) {
+                //section 2
+                if (destination.index == 1) {
+                    document.querySelector('#section2').querySelector('img').style.left = 0 + 'px';
+                    document.querySelector('#section2').querySelector('p').style.opacity = 1;
+                }
+
+                //back to original state
+                else if (origin && origin.index == 1) {
+                    document.querySelector('#section2').querySelector('img').style.left = 130 + '%';
+                    document.querySelector('#section2').querySelector('p').style.opacity = 0;
+                }
+
+                //section 3 is using the state classes to fire the animation
+                //see the CSS code above!
+            }
+        });
+    </script>
+
+</body>
+
+</html>
